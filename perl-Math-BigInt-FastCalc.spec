@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	BigInt-FastCalc
+%define		pdir	Math
+%define		pnam	BigInt-FastCalc
 Summary:	Math::BigInt::FastCalc - some XS to support Math::BigInt
 Summary(pl):	Math::BigInt::FastCalc - XS wspieraj±ce Math::BigInt
 Name:		perl-Math-BigInt-FastCalc
