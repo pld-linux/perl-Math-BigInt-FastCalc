@@ -10,6 +10,7 @@ Summary(pl):	Math::BigInt::FastCalc - XS wspieraj±ce Math::BigInt
 Name:		perl-Math-BigInt-FastCalc
 Version:	0.06
 Release:	1
+# same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
