@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	998a247a55bdc39c2a4906207d8ba247
 Patch0:		%{name}-test.patch
 BuildRequires:	perl-Math-BigInt >= 1.62
-BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Math-BigInt >= 1.62
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
