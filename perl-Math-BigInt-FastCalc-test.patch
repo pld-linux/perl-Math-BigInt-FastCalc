@@ -1,0 +1,11 @@
+--- Math-BigInt-FastCalc-0.06/t/bigintpm.inc.orig	2002-08-13 19:37:32.000000000 +0200
++++ Math-BigInt-FastCalc-0.06/t/bigintpm.inc	2003-06-29 11:17:01.000000000 +0200
+@@ -1894,7 +1894,7 @@
+ -2:NaN
+ -123:NaN
+ Nan:NaN
+-+inf:NaN
+++inf:inf
+ &bround
+ $round_mode('trunc')
+ 0:12:0
