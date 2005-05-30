@@ -8,13 +8,13 @@
 Summary:	Math::BigInt::FastCalc - some XS to support Math::BigInt
 Summary(pl):	Math::BigInt::FastCalc - XS wspieraj±ce Math::BigInt
 Name:		perl-Math-BigInt-FastCalc
-Version:	0.06
-Release:	1
+Version:	0.10
+Release:	0.1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	998a247a55bdc39c2a4906207d8ba247
+# Source0-md5:	63fb65c7fe2cbd67912b214a1094551f
 Patch0:		%{name}-test.patch
 BuildRequires:	perl-Math-BigInt >= 1.62
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -33,7 +33,7 @@ reimplementacj± czê¶ci funkcji Calc w XS.
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 # sqrt(+inf) == inf, not NaN
-%patch -p1
+#%patch -p1
 
 %build
 %{__perl} Makefile.PL \
