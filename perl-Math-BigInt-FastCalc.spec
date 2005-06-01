@@ -15,11 +15,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	63fb65c7fe2cbd67912b214a1094551f
-Patch0:		%{name}-test.patch
-BuildRequires:	perl-Math-BigInt >= 1.62
+BuildRequires:	perl-Math-BigInt >= 1.76
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.62
+Requires:	perl-Math-BigInt >= 1.76
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,8 +31,6 @@ reimplementacj± czê¶ci funkcji Calc w XS.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-# sqrt(+inf) == inf, not NaN
-#%patch -p1
 
 %build
 %{__perl} Makefile.PL \
