@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	BigInt-FastCalc
 Summary:	Math::BigInt::FastCalc - some XS to support Math::BigInt
-Summary(pl):	Math::BigInt::FastCalc - XS wspieraj±ce Math::BigInt
+Summary(pl.UTF-8):   Math::BigInt::FastCalc - XS wspierajÄ…ce Math::BigInt
 Name:		perl-Math-BigInt-FastCalc
 Version:	0.10
 Release:	1
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a replacement library for Math::BigInt::Calc that reimplements
 some of the Calc functions in XS.
 
-%description -l pl
-Ten modu³ jest zamiennikiem Math::BigInt::Calc, bêd±cym
-reimplementacj± czê¶ci funkcji Calc w XS.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest zamiennikiem Math::BigInt::Calc, bÄ™dÄ…cym
+reimplementacjÄ… czÄ™Å›ci funkcji Calc w XS.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
