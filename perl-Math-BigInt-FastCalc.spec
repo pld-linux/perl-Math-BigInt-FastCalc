@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	BigInt-FastCalc
 Summary:	Math::BigInt::FastCalc - some XS to support Math::BigInt
-Summary(pl.UTF-8):   Math::BigInt::FastCalc - XS wspierające Math::BigInt
+Summary(pl.UTF-8):	Math::BigInt::FastCalc - XS wspierające Math::BigInt
 Name:		perl-Math-BigInt-FastCalc
 Version:	0.10
 Release:	1
