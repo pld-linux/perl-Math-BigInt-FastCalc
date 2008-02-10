@@ -9,7 +9,7 @@ Summary:	Math::BigInt::FastCalc - some XS to support Math::BigInt
 Summary(pl.UTF-8):	Math::BigInt::FastCalc - XS wspierające Math::BigInt
 Name:		perl-Math-BigInt-FastCalc
 Version:	0.10
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
