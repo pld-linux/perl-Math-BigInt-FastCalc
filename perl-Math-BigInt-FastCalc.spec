@@ -8,18 +8,21 @@
 Summary:	Math::BigInt::FastCalc - some XS to support Math::BigInt
 Summary(pl.UTF-8):	Math::BigInt::FastCalc - XS wspierające Math::BigInt
 Name:		perl-Math-BigInt-FastCalc
-Version:	0.19
+Version:	0.30
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	28012999c308ced2f8c8407bbc880f53
+# Source0-md5:	ec04fc9213e866ab6c7c323357eb57a1
 URL:		http://search.cpan.org/dist/Math-BigInt-FastCalc/
-BuildRequires:	perl-Math-BigInt >= 1.76
+BuildRequires:	perl-Math-BigInt >= 1.997
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.76
+%if %{with tests}
+BuildRequires:	perl-Test-Simple >= 0.62
+%endif
+Requires:	perl-Math-BigInt >= 1.997
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -58,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Math/BigInt/FastCalc
 %{perl_vendorarch}/auto/Math/BigInt/FastCalc/FastCalc.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Math/BigInt/FastCalc/FastCalc.so
-%{_mandir}/man3/*
+%{_mandir}/man3/Math::BigInt::FastCalc.3pm*
