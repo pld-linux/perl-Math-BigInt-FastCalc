@@ -59,6 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGES CREDITS README
 %{perl_vendorarch}/Math/BigInt/FastCalc.pm
 %dir %{perl_vendorarch}/auto/Math/BigInt/FastCalc
-%{perl_vendorarch}/auto/Math/BigInt/FastCalc/FastCalc.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Math/BigInt/FastCalc/FastCalc.so
 %{_mandir}/man3/Math::BigInt::FastCalc.3pm*
